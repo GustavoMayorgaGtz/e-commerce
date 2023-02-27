@@ -1,0 +1,43 @@
+<div class="body">
+    <div class="menu">
+        <!-- Bloque para imagen de administrador -->
+        <div class="container-informacion">
+            <div class="container-icon">
+                <img src="" alt="" class="icon-admin">
+            </div>
+            <span class="title-menu">Cuenta administrador</span>
+        </div>
+        <!-- Bloque para imagen de administrador -->
+        <!-- opciones -->
+        <div class="opcion" (click)="changeMenu(0)">Informacion sobre la empresa/negocio</div>
+        <div class="opcion" (click)="changeMenu(1)">Crear categoria</div>
+        <div class="opcion" (click)="changeMenu(2)">Productos</div>
+        <div class="opcion" (click)="changeMenu(3)">Publicaciones/Noticias</div>
+        <div class="opcion" (click)="changeMenu(4)">Orden de publicacion</div>
+        <div class="opcion" (click)="changeMenu(5)">Diseño</div>
+        <div class="opcion" (click)="changeMenu(6)">Cerrar sesion</div>
+        <!-- opciones -->
+    </div>
+    <!-- Contenedor donde van las funciones de administrador -->
+    <div class="right">
+        <div class="op" *ngIf="opcion == 0">
+            <app-informacion></app-informacion>
+        </div>
+        <div class="op" *ngIf="opcion == 1">
+            <app-categorias></app-categorias>
+        </div>
+        <div class="op" *ngIf="opcion == 2">
+            <app-productos></app-productos>
+        </div>
+        <div class="op" *ngIf="opcion == 3">
+            <app-publicaciones></app-publicaciones>
+        </div>
+        <div class="op" *ngIf="opcion == 4">
+            <app-orden></app-orden>
+        </div>
+        <div class="op" *ngIf="opcion == 5">
+        <app-design></app-design>
+        </div>
+    </div>
+    <!-- Contenedor donde van las funciones de administrador -->
+</div>

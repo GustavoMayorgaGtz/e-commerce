@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/*font-family: 'PT Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+/*font-family: 'Mukta', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+/*font-family: 'Noto Sans', sans-serif;*/
+*{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+ 
+}
+.menu{
+    user-select: none;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid rgb(207, 207, 207);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+}
+//Bloque para imagen de administrador
+.container-informacion{
+    width:100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.container-icon{
+    margin: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.295);;
+    background-color: rgb(230, 230, 230);
+    border: 5px solid white;
+    overflow: hidden;
+}
+//Bloque para imagen de administrador
+.opcion{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    transition: all 0.2s;
+}
+.opcion:hover{
+    transition: all 0.2s;
+    color:white;
+    background-color: rgb(130, 153, 168);
+    cursor:pointer; 
+}
+
+
+//Contenedor donde van las funciones de administrador
+.right{
+    padding:15px;
+    width:calc(100vw - 400px);
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}

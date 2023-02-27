@@ -1,0 +1,55 @@
+<div class="body">
+
+    <div class="bloque">
+        <span class="title">La información que proporciones será utilizada para mejorar la experiencia del usuario que visite tu tienda. El cliente podrá ver las direcciones de tu tienda física, medios para contactarte, redes sociales, entre otras.</span>
+    </div>
+
+    <div class="formulario">
+        <div class="entrada">
+            <span>Nombre de la empresa</span>
+            <div class="agroup">
+                <input type="text" class="input-text">
+                <app-verificar-entrada [status]="1"></app-verificar-entrada>
+            </div>
+        </div>
+        <div class="entrada">
+            <span>Correo de la empresa</span>
+            <div class="agroup">
+            <input type="text" class="input-text">
+            <app-verificar-entrada  [status]="2"></app-verificar-entrada>
+            </div>
+        </div>
+        <div class="entrada">
+            <span>Telefono</span>
+            <div class="agroup">
+            <input type="text" class="input-text">
+            <app-verificar-entrada></app-verificar-entrada>
+            </div>
+        </div>
+        <div class="entrada">
+            <span>Direccion</span>
+            <input type="text" class="input-text">
+        </div>
+        <div class="entrada-area">
+            <span>Acerca de tu empresa</span>
+            <textarea class="input-text-area"></textarea>
+        </div>
+        <div class="entrada">
+            <span>Facebook</span>
+            <input type="text" class="input-text">
+        </div>
+        <div class="entrada">
+            <span>Instagram</span>
+            <input type="text" class="input-text">
+        </div>
+        <div class="entrada">
+            <span>Otro</span>
+            <input type="text" class="input-text">
+        </div>
+        <div class="entrada">
+            <div class="guardar">Guardar informacion</div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
